@@ -18,7 +18,7 @@ jobs:
 
       - name: Close PRs Without Linked Issues
         run: |
-          const daysThreshold = 30;
+          # const daysThreshold = 30;
           const github = require('@actions/github');
           const octokit = new github.GitHub(process.env.GITHUB_TOKEN);
           const owner = github.context.repo.owner;
